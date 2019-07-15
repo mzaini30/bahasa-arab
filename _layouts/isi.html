@@ -5,8 +5,17 @@ layout: default
 <link rel="stylesheet" href="vendor/reveal/css/reveal.css">
 <link rel="stylesheet" href="vendor/reveal/css/theme/white.css">
 
-{% for x in (1..page.jumlah_gambar) %}
-	<img src="gambar/{{ page.folder }}/Slide{{ x }}.JPG" alt="">
-{% endfor %}
+<div class="reveal">
+	<div class="slides">
+		{% for x in (1..page.jumlah_gambar) %}
+			<section>
+				<img src="gambar/{{ page.folder }}/Slide{{ x }}.JPG" alt="">
+			</section>
+		{% endfor %}		
+	</div>
+</div>
 
 <script src="vendor/reveal/js/reveal.js"></script>
+<script>
+	Reveal.initialize()
+</script>
