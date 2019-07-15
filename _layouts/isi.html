@@ -2,6 +2,11 @@
 layout: default
 ---
 
+<link rel="stylesheet" href="vendor/reveal/css/reveal.css">
+<link rel="stylesheet" href="vendor/reveal/css/theme/white.css">
+
 {% for x in (1..page.jumlah_gambar) %}
 	<img src="gambar/{{ page.folder }}/Slide{{ x }}.JPG" alt="">
 {% endfor %}
+
+<script src="vendor/reveal/js/reveal.js"></script>
