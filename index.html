@@ -1,5 +1,8 @@
 ---
 layout: default
+aplikasi_lainnya:
+  judul: Aplikasi Lainnya
+  link: https://aplikasi.catatanzen.com
 ---
 
 <style>
@@ -30,5 +33,12 @@ layout: default
 				</a>
 			</div>	
 		{% endfor %}
+		<div class="col-xs-6 col-sm-4 col-md-3">
+			<a href="{{ page.aplikasi_lainnya.link }}" class="bukan-link">
+				<div class="panel panel-default">
+					<div class="panel-body">{{ page.aplikasi_lainnya.judul }}</div>
+				</div>
+			</a>
+		</div>	
 	</div>
 </div>
